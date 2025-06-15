@@ -1,160 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dahlvirose Delights- Gourmet Restaurant</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dahlvirose Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Dahlvirose Delights</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-utensils me-2"></i>Dahlvirose
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <br>
+            <br>
+          <h1 class="display-3 fw-bold mb-4">Welcome to Dahlvirose</h1>
+          <p class="lead mb-4">Experience authentic Italian cuisine in the heart of the city</p>
+          <a href="#menu" class="btn btn-warning btn-lg px-5 py-3">
+            <i class="fas fa-utensils me-2"></i>View Our Menu
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section-padding bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="display-4 fw-bold mb-3">Our Menu</h2>
+          <p class="lead">Discover our carefully crafted dishes made with the finest ingredients</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Menu Item 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card menu-item h-100 shadow">
+            <img src="https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg" 
+                 class="card-img-top" alt="Margherita Pizza">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Margherita Pizza</h5>
+              <p class="card-text flex-grow-1">Fresh mozzarella, tomato sauce, and basil on our signature wood-fired crust</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 text-warning mb-0">$18.99</span>
+                <button class="btn btn-outline-warning">Order Now</button>
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="display-4 fw-bold">Experience Culinary Excellence</h1>
-            <p class="lead mb-4">Handcrafted dishes made with passion and fresh ingredients</p>
-            <a href="#menu" class="btn btn-primary btn-lg">View Menu</a>
+        <!-- Menu Item 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card menu-item h-100 shadow">
+            <img src="https://tuanashop.nl/cdn/shop/articles/Pasta-carbonara-Tuana-Shop-71955126.jpg?v=1710521566" 
+                 class="card-img-top" alt="Pasta Carbonara">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Pasta Carbonara</h5>
+              <p class="card-text flex-grow-1">Creamy pasta with pancetta, eggs, and parmesan cheese - a Roman classic</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 text-warning mb-0">$22.99</span>
+                <button class="btn btn-outline-warning">Order Now</button>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Our Menu</h2>
-            <div class="row">
-                <!-- Item 1 -->
-                <div class="col-md-4 menu-item">
-                    <div class="card h-100">
-                        <img src="https://pbs.twimg.com/media/F4J1hqIXwAIcBVU.jpg" class="card-img-top menu-img" alt="Fresh Salad">
-                        <div class="card-body">
-                            <h5 class="card-title">Amiwô (Red paste from Benin)</h5>
-                            <p class="card-text">Amiwô is a red corn-based pasta that is very popular in Benin and throughout the sub-region.</p>
-                            <p>It is usually served with a sauce commonly known in the Fon language as "Monyo," which is made with tomatoes and peppers.</p>
-                            <p class="fw-bold">$9.50</p>
-                        </div>
-                    </div>
+        <!-- Menu Item 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card menu-item h-100 shadow">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                 class="card-img-top" alt="Tiramisu">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Tiramisu</h5>
+              <p class="card-text flex-grow-1">Traditional Italian dessert with coffee-soaked ladyfingers and mascarpone</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 text-warning mb-0">$8.99</span>
+                <button class="btn btn-outline-warning">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card menu-item h-100 shadow">
+            <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                 class="card-img-top" alt="Risotto">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Mushroom Risotto</h5>
+              <p class="card-text flex-grow-1">Creamy Arborio rice with wild mushrooms and truffle oil</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 text-warning mb-0">$24.99</span>
+                <button class="btn btn-outline-warning">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Item 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card menu-item h-100 shadow">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                 class="card-img-top" alt="Bruschetta">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Bruschetta Trio</h5>
+              <p class="card-text flex-grow-1">Three varieties of our signature bruschetta with fresh toppings</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 text-warning mb-0">$12.99</span>
+                <button class="btn btn-outline-warning">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Item 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card menu-item h-100 shadow">
+            <img src="https://eataly.fr/cdn/shop/articles/ossobuco-alla-milanese.jpg?v=1740157290&width=1100" 
+                 class="card-img-top" alt="Osso Buco">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Osso Buco</h5>
+              <p class="card-text flex-grow-1">Braised veal shanks in a rich tomato and wine sauce with gremolata</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 text-warning mb-0">$32.99</span>
+                <button class="btn btn-outline-warning">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://misterwils.fr/wp-content/uploads/2021/10/misterwils-blog-style-decoration-pour-restaurant-1.jpg" 
+               class="img-fluid rounded shadow about-img w-100" alt="Restaurant Interior">
+        </div>
+        <div class="col-lg-6 ps-lg-5">
+          <h2 class="display-4 fw-bold mb-4">About Dahlvirose</h2>
+          <p class="lead mb-4">
+            Since 2020, Dahlvirose has been serving authentic Italian cuisine in a warm, welcoming atmosphere. 
+            Our family-owned restaurant combines traditional recipes passed down through generations with the 
+            finest locally-sourced ingredients.
+          </p>
+          <p class="mb-4">
+            Located in the heart of downtown, we pride ourselves on creating memorable dining experiences 
+            for our guests. From intimate dinners to large celebrations, our dedicated team ensures every 
+            meal is prepared with passion and served with care.
+          </p>
+          <div class="row">
+            <div class="col-6">
+              <div class="text-center">
+                <h3 class="text-warning fw-bold">5+</h3>
+                <p class="mb-0">Years of Excellence</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <h3 class="text-warning fw-bold">50k+</h3>
+                <p class="mb-0">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="display-4 fw-bold mb-3">Contact Us</h2>
+          <p class="lead">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="card shadow">
+            <div class="card-body p-5">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                  </div>
                 </div>
                 
-                <!-- Item 2 -->
-                <div class="col-md-4 menu-item">
-                    <div class="card h-100">
-                        <img src="https://recettes.africa/wp-content/uploads/2024/12/Poulet-braise-a-la-sauce-gombo-1.png" class="card-img-top menu-img" alt="Fresh Pasta">
-                        <div class="card-body">
-                            <h5 class="card-title">Braised Chicken with Okra Sauce</h5>
-                            <p class="card-text">Braised chicken with okra sauce is a classic African dish, beloved for its rich flavors and unique texture.</p>
-                            <p>This dish is perfect for family meals or special occasions. Discover how to prepare this delicious dish, which perfectly combines the tenderness of chicken with the slightly viscous flavor of okra.</p>
-                            <p class="fw-bold">$10.00</p>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" required>
                 </div>
                 
-                <!-- Item 3 -->
-                <div class="col-md-4 menu-item">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top menu-img" alt="Gourmet Dessert">
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate Lava Cake</h5>
-                            <p class="card-text">An irresistible dessert with a molten center, served with vanilla ice cream.</p>
-                            <p class="fw-bold">$10.50</p>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone">
                 </div>
+                
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select class="form-select" id="subject" required>
+                    <option value="">Choose a subject</option>
+                    <option value="reservation">Reservation</option>
+                    <option value="catering">Catering Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div class="mb-4">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="text-center">
+                  <button type="submit" class="btn btn-warning btn-lg px-5">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                  </button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">About Us</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/d0/2c/b8/photo4jpg.jpg?w=600&h=400&s=1">
-                </div>
-                <div class="col-lg-6">
-                    <h3>Our Story</h3>
-                    <p>Founded in 2020, Dahlvirose Delights has quickly become a benchmark in gastronomy. Our award-winning chef, FIFA Elnette Zossou, combines traditional techniques with modernity to create unique dishes.</p>
-                    <p>We are committed to using local and seasonal ingredients, working directly with producers in our region. Each dish is prepared with care and passion to deliver a memorable culinary experience.</p>
-                    <p>Our restaurant has been recognized with several culinary awards and is regularly featured in prestigious dining guides.</p>
-                </div>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="row mt-5">
+        <div class="col-lg-4 text-center mb-4">
+          <div class="card h-100 border-0">
+            <div class="card-body">
+              <i class="fas fa-map-marker-alt text-warning fa-2x mb-3"></i>
+              <h5 class="fw-bold">Address</h5>
+              <p class="text-muted">villa 321 -keur massar<br>Dakar/Sénégal</p>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Contact Us</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Send</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="col-lg-4 text-center mb-4">
+          <div class="card h-100 border-0">
+            <div class="card-body">
+              <i class="fas fa-phone text-warning fa-2x mb-3"></i>
+              <h5 class="fw-bold">Phone</h5>
+              <p class="text-muted">(+221) 773174045</p>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">© 2023 Dahlvirose Delights. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                </div>
+        <div class="col-lg-4 text-center mb-4">
+          <div class="card h-100 border-0">
+            <div class="card-body">
+              <i class="fas fa-clock text-warning fa-2x mb-3"></i>
+              <h5 class="fw-bold">Hours</h5>
+              <p class="text-muted">Mon-Thu: 5PM-10PM<br>Fri-Sat: 5PM-11PM<br>Sun: 4PM-9PM</p>
             </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h5 class="fw-bold mb-3">
+            <i class="fas fa-utensils me-2"></i>Dahlvirose restaurant
+          </h5>
+          <p class="mb-3">
+            Authentic Italian cuisine served with passion since 2020. 
+            Join us for an unforgettable dining experience.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#menu" class="text-light text-decoration-none">Menu</a></li>
+            <li><a href="#about" class="text-light text-decoration-none">About Us</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold mb-3">Contact Info</h6>
+          <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>villa 321, keur massar</p>
+          <p class="mb-1"><i class="fas fa-phone me-2"></i>(+221) 773174045</p>
+          <p class="mb-0"><i class="fas fa-envelope me-2"></i>dahlvirose@gmail.com</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2024 Dahlvirose Restaurant. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> for great food</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Form submission handler
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
